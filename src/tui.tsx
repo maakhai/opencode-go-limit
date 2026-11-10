@@ -263,7 +263,12 @@ function LimitsDialog(props: {
                   <box width={9} flexShrink={0}>
                     <text fg={theme.text.muted}>{window.label}</text>
                   </box>
-                  <box width={4} flexShrink={0} justifyContent="flex-end">
+                  <box
+                    width={4}
+                    flexShrink={0}
+                    flexDirection="row"
+                    justifyContent="flex-end"
+                  >
                     <text fg={levelColor(theme, level())}>{formatPercent(meter().percent)}</text>
                   </box>
                   <box flexDirection="row" flexShrink={0}>
@@ -271,9 +276,11 @@ function LimitsDialog(props: {
                     <text fg={theme.text.faint}>{bar().empty}</text>
                   </box>
                   <box flexDirection="row" gap={1}>
-                    <text fg={theme.text.muted}>
-                      resets in {formatCountdown(now(), meter().resetsAt)}
-                    </text>
+                    <box width={17} flexShrink={0}>
+                      <text fg={theme.text.muted}>
+                        resets in {formatCountdown(now(), meter().resetsAt)}
+                      </text>
+                    </box>
                     <text fg={theme.text.faint}>({formatResetDate(meter().resetsAt)})</text>
                   </box>
                 </box>
