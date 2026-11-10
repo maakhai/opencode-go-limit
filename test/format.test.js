@@ -26,17 +26,17 @@ test("formatPercent rounds", () => {
 })
 
 test("progressBar fills proportionally and clamps", () => {
-  assert.equal(progressBar(0, 5), "─────")
-  assert.equal(progressBar(50, 4), "━━──")
-  assert.equal(progressBar(100, 4), "━━━━")
-  assert.equal(progressBar(130, 4), "━━━━")
-  assert.equal(progressBar(3, 14), "━" + "─".repeat(13))
+  assert.equal(progressBar(0, 5), "░░░░░")
+  assert.equal(progressBar(50, 4), "██░░")
+  assert.equal(progressBar(100, 4), "████")
+  assert.equal(progressBar(130, 4), "████")
+  assert.equal(progressBar(3, 14), "█" + "░".repeat(13))
 })
 
 test("progressBarParts splits filled and empty segments", () => {
-  assert.deepEqual(progressBarParts(0, 5), { filled: "", empty: "─────" })
-  assert.deepEqual(progressBarParts(50, 4), { filled: "━━", empty: "──" })
-  assert.deepEqual(progressBarParts(130, 4), { filled: "━━━━", empty: "" })
+  assert.deepEqual(progressBarParts(0, 5), { filled: "", empty: "░░░░░" })
+  assert.deepEqual(progressBarParts(50, 4), { filled: "██", empty: "░░" })
+  assert.deepEqual(progressBarParts(130, 4), { filled: "████", empty: "" })
 })
 
 test("formatCountdown handles minutes, hours and days", () => {

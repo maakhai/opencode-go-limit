@@ -8,9 +8,9 @@ you run `/limit`.
 │  OpenCode Go · Plan limits                                                           │
 │                                                                                      │
 │  ┃                                                                                   │
-│  ┃ 5 hours     3% ━───────── resets in 2h 46m  (Oct 29, 23:30)                       │
-│  ┃ Weekly      9% ━───────── resets in 3d      (Nov 1, 21:00)                        │
-│  ┃ Monthly    15% ━━──────── resets in 11d 18h (Nov 10, 14:59)                       │
+│  ┃ 5 hours     3% █░░░░░░░░░ resets in 2h 46m  (Oct 29, 23:30)                       │
+│  ┃ Weekly      9% █░░░░░░░░░ resets in 3d      (Nov 1, 21:00)                        │
+│  ┃ Monthly    15% ██░░░░░░░░ resets in 11d 18h (Nov 10, 14:59)                       │
 │  ┃                                                                                   │
 │                                                                                      │
 │  Workspace   personal                                                                │
