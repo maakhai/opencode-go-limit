@@ -271,7 +271,7 @@ function LimitsDialog(props: {
                   >
                     <text fg={levelColor(theme, level())}>{formatPercent(meter().percent)}</text>
                   </box>
-                  <box flexDirection="row" flexShrink={0}>
+                  <box width={10} flexShrink={0} flexDirection="row">
                     <text fg={levelColor(theme, level())}>{bar().filled}</text>
                     <text fg={theme.text.faint}>{bar().empty}</text>
                   </box>

@@ -21,8 +21,8 @@ export function progressBarParts(percent, width = 16) {
   const exact = (clamped / 100) * size;
   const filled = clamped > 0 ? Math.max(1, Math.round(exact)) : 0;
   return {
-    filled: "█".repeat(filled),
-    empty: "░".repeat(size - filled),
+    filled: "━".repeat(filled),
+    empty: "─".repeat(size - filled),
   };
 }
 
